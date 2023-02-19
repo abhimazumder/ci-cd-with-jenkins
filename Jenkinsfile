@@ -35,7 +35,7 @@ pipeline {
         stage('Create Container') {
             steps {
                 echo 'Pulling Docker Image from DockerHub...'
-                sh 'docker pull abhishekmazumder/myapp:latest'
+                sh 'sudo docker pull abhishekmazumder/myapp:latest'
                 echo 'Creating Container...'
                 sh 'sudo docker run -d -it abhishekmazumder/myapp:latest'
             }
