@@ -60,7 +60,7 @@ All of these stages would be performed using Jenkins by making a pipeline using 
   5. Modify Security Group in AWS EC2 instance, allowed access on port 8080 (to access Jenkins dashboard).
   6. Connect to Jenkins on port 8080 of EC2 Public IP and configure Jenkins initial setup.
   7. Make a GitHub repository and upload code.
-  9. Create a scripted declarative pipeline and use it to build the code.
+  9. Create a scripted declarative pipeline and build the code.
 
 ### References
 
