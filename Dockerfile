@@ -12,8 +12,8 @@ RUN apt update && \
     apt-get install -y python3-pip && \
     python3 -m pip install --user --upgrade pip && \
     pip install pytest && \
-    git clone https://github.com/abhimazumder/jenkinsDemo.git && \
-    cd jenkinsDemo && \
+    git clone https://github.com/abhimazumder/devopsProjectTest.git && \
+    cd devopsProjectTest && \
     python3.8 -m pytest -v test_mathlib.py
 
 CMD ["python", "/bin/bash"]
