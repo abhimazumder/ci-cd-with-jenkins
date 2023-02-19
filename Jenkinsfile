@@ -34,12 +34,10 @@ pipeline {
         }
         stage('Create Container') {
             steps {
-                sh 'sudo docker kill myappContainer'
-                sh 'sudo docker rm myappContainer'
                 echo 'Pulling Docker Image from DockerHub...'
                 sh 'docker pull abhishekmazumder/myapp:latest'
                 echo 'Creating Container...'
-                sh 'sudo docker run -d -it --name myappContainer abhishekmazumder/myapp:latest'
+                sh 'sudo docker run -d -it abhishekmazumder/myapp:latest'
             }
         }
     }
