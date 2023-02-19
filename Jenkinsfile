@@ -12,13 +12,13 @@ pipeline {
       stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'python3.8 mathlib.py'
+                sh 'python3 mathlib.py'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'python3.8 -m pytest -v test_mathlib.py'
+                sh 'python3 -m pytest -v test_mathlib.py'
             }
         }
         stage('Push Docker Image') {
