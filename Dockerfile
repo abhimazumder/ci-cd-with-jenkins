@@ -12,7 +12,7 @@ RUN apt update && \
     apt-get install -y python3-pip && \
     python3 -m pip install --user --upgrade pip && \
     pip install pytest && \
-    git clone https://github.com/abhimazumder/devopsProjectTest.git && \
+    git clone https://github.com/abhimazumder/ci-cd-with-jenkins.git && \
     cd devopsProjectTest && \
     python3.8 -m pytest -v test_mathlib.py
 
